@@ -1,0 +1,13 @@
+[package]
+name = "rust-funny"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.28"
+rand = "0.9"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

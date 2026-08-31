@@ -1,0 +1,43 @@
+name: 🐛 Bug report
+description: Report a bug
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue! Please provide as much detail as possible to help us track it down quickly.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Clearly describe the problem you encountered.
+      placeholder: e.g. the screen flickers after `cargo run`, projectiles never appear…
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: How do you trigger the issue, step by step?
+      placeholder: |
+        1. Run ...
+        2. Resize the terminal to ...
+        3. Observe ...
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Operating system, terminal emulator, Rust version, etc.
+      placeholder: "e.g. Linux / GNOME Terminal / rustc 1.97"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Additional context
+      description: Logs, screenshots, `--dump` output, etc.
+      render: text

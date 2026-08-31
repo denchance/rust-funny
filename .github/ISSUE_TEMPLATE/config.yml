@@ -1,0 +1,2 @@
+# Disable blank issues and guide users to the templates above
+blank_issues_enabled: false
