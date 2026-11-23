@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 crossterm = "0.28"
-rand = "0.9"
+rand = "0.10"
 
 [profile.release]
 lto = "thin"
